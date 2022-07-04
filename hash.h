@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #define TAM 20
+#define VET 41
 
 typedef struct BlockKey{
 
@@ -24,4 +25,5 @@ void ImprimirLista(Lista *l);
 void CriarHS(Lista t[]);
 void InsertHS(Lista t[], int chave);
 void ImprimirHash(Lista t[]);
-void VetNoRepetions(int *vet);
+void VetNoRepetions(int *vets);
+void ExecHashEF();

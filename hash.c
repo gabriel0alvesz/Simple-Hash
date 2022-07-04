@@ -33,7 +33,7 @@ void ImprimirLista(Lista *l){
 
 	}
 
-	printf("[%d]",l->tam);
+	printf("----->[%d]",l->tam);
 
 }
 
@@ -69,7 +69,7 @@ void VetNoRepetions(int *vet){
 	int control; // Variavel de controle
 	srand(time(0));
 
-	while(i < TAM){
+	while(i < VET){
 
 		vet[i] = rand() % 100;
 		control = 0;
@@ -89,13 +89,40 @@ void VetNoRepetions(int *vet){
 		}
 	}
 
-	for(int j = 0; j < TAM; j++){
+	//Inteiros nao repetidos.
+	printf("\n\nVetor de inteiros => ");
+
+	for(int j = 0; j < VET; j++){
 
 		printf("%d ", vet[j]);
 
 	}
 
 	printf("\n");
+
+}
+
+void ExecHashEF(){
+
+	int vet[VET];
+	Lista HashTable[TAM];
+
+	VetNoRepetions(vet);
+	printf("\n");
+
+	CriarHS(HashTable);
+
+	for(int i = 0; i < VET; i++){
+
+		InsertHS(HashTable,vet[i]);
+
+	}
+
+	printf("\n");
+
+	printf("-------------- TABELA --------------\n\n");
+
+	ImprimirHash(HashTable);
 
 }
 
