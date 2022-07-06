@@ -7,8 +7,11 @@ int Hash(int chave){
 }
 
 void CriarLista(Lista *l){
+    
     l->first = NULL;
     l->tam = 0;
+    l->col = 0;
+
 }
 
 void ListaInsert(Lista *l, int chave){
@@ -17,9 +20,24 @@ void ListaInsert(Lista *l, int chave){
 
 	novo->chave = chave;
     novo->prox = l->first;
+
+	if(l->first == NULL){
+
+    	l->first = novo;
+    	l->tam++;
+
+	}else{
+
+		l->first = novo;
+    	l->tam++;
+    	l->col++;
+	}
+
+	/*novo->chave = chave;
+    novo->prox = l->first;
     l->first = novo;
     l->tam++;
-
+	*/
 }
 
 void ImprimirLista(Lista *l){
@@ -65,7 +83,7 @@ void ImprimirHash(Lista t[]){
 
 void VetNoRepetions(int *vet){
 
-	int num, i = 0;
+	int i = 0;
 	int control; // Variavel de controle
 	srand(time(0));
 
@@ -102,6 +120,20 @@ void VetNoRepetions(int *vet){
 
 }
 
+void ContColisoes(Lista t[]){
+
+	int soma = 0;
+
+	for(int i = 0; i < TAM; i++){
+
+		soma += t[i].col;
+		
+	}
+
+	printf("\nQuantidade de colisões = %d\n\n", soma);
+}
+
+
 void ExecHashEF(){
 
 	int vet[VET];
@@ -123,6 +155,8 @@ void ExecHashEF(){
 	printf("-------------- TABELA --------------\n\n");
 
 	ImprimirHash(HashTable);
+
+	ContColisoes(HashTable);
 
 }
 
