@@ -8,7 +8,7 @@
 
 <h2>Colisões e Endereçamento Fechado</h2>
 <p align = "justify">
-      Em uma Tabela Hash, quando uma posição já está ocupada e uma outra chave é associada a mesma posição, dizemos que há uma colisão.(Figura 1). Para corrigir as colisões, neste repositório, foi implementado o método de <b>Endereçamento Fechado</b>, que consiste em utilizar <i>Listas Encadeadas</i>. A cada colisão a chave é inserida na lista da posição onde houve a colisão. Ou seja, foi criado um vetor de listas encadeadas. Na Figura 2, há uma imagem retirada de uma das execuções do algoritmo deste reposiório, que apresenta como funciona o tratamento destas colisões por meio do <b>Endereçamento Fechado</b>.
+      Em uma Tabela Hash, quando uma posição já está ocupada e uma outra chave é associada a mesma posição, dizemos que há uma colisão.(Figura 1). Para corrigir as colisões, neste repositório, foi implementado o método de <b>Endereçamento Fechado</b>, que consiste em utilizar <i>Listas Encadeadas</i>. A cada colisão a chave é inserida na lista da posição onde houve a colisão. Ou seja, foi criado um vetor de listas encadeadas. Na Figura 2, há uma imagem retirada de uma das execuções do algoritmo deste reposiório, que apresenta o funcionamendo e o tratamento destas colisões por meio do <b>Endereçamento Fechado</b> com a função de dispersão h(x) = x mod tam, sendo "x" a chave e "tam" o tamanho da tabela.
       </p>
 
 <p align = "center">
