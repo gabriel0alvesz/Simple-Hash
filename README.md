@@ -3,7 +3,7 @@
  <h2> O que é uma Tabela Hash?</h2>
  
  <p align = "justify">
-      A Tabela Hash ou Tabela de Dispersão é uma estrutura de dados especial que associa chaves de mapeamento a valores, para indexação de dados. É por meio de uma função matemática, conhecida como <i>Função Hash</i> ou <i>Função de Espelhamento</i>, que faz a associação de uma chave à uma posição. O objetivo de uma Tabela Hash é, por meio de uma simples chave fazer uma busca de forma rápida e eficiente, e assim, conseguir o valor desejado.<br>
+      A Tabela Hash ou Tabela de Dispersão é uma estrutura de dados especial que associa chaves de mapeamento a valores, para indexação de dados. É por meio de uma função matemática, conhecida como <i>Função Hash</i> ou <i>Função de Espelhamento</i>, que faz a associação de uma chave à uma posição. O objetivo de uma Tabela Hash é, por meio de uma simples chave, fazer uma busca de forma rápida e eficiente e assim, conseguir o valor desejado.<br>
       </p>
 
 <h2>Colisões e Endereçamento Fechado</h2>
@@ -36,7 +36,7 @@ Figura 2 - Tratamento de colisões com listas encadeadas<br>
 <h2>Referências</h2>
 <p align = "justify">
         <ul>
-        <li><a = href = "https://www2.unifap.br/furtado/files/2016/11/Aula7.pdf">Tabelas de Dispersão</a> - Nelson Cruz Sampaio Neto;2016</li>
+        <li><a = href = "https://blog.pantuza.com/artigos/tipos-abstratos-de-dados-tabela-hash">Tabela Hash</a> - Gustavo Pantuza</li>
         </ul>
         </p>
 
