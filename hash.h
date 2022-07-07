@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define TAM 20
-#define VET 43
+#define TAM 43
+#define VET 20
 
 typedef struct BlockKey{
 
@@ -13,7 +13,7 @@ typedef struct BlockKey{
 
 typedef struct Lista{
 
-	  BlockKey *first;
+	  BlockKey *first, *last;
 	  int tam;
 	  int col;
 

@@ -7,8 +7,10 @@ int Hash(int chave){
 }
 
 void CriarLista(Lista *l){
-    
-    l->first = NULL;
+
+    l->first = (BlockKey*)malloc(sizeof(BlockKey));
+    l->first->prox = NULL;
+    l->last = l->first;
     l->tam = 0;
     l->col = 0;
 
@@ -16,20 +18,15 @@ void CriarLista(Lista *l){
 
 void ListaInsert(Lista *l, int chave){
 	
-	BlockKey *novo = malloc(sizeof(BlockKey));
+	l->last->prox = (BlockKey*)malloc(sizeof(BlockKey));
 
-	novo->chave = chave;
-    novo->prox = l->first;
+	l->last->prox->chave = chave;
+    l->last->prox->prox = NULL;
+    l->last = l->last->prox;
+    l->tam++;
 
-	if(l->first == NULL){
+	if(l->tam > 1){
 
-    	l->first = novo;
-    	l->tam++;
-
-	}else{
-
-		l->first = novo;
-    	l->tam++;
     	l->col++;
 	}
 
@@ -42,7 +39,7 @@ void ListaInsert(Lista *l, int chave){
 
 void ImprimirLista(Lista *l){
 
-	BlockKey *aux = l->first;
+	BlockKey *aux = l->first->prox;
 
 	while(!(aux == NULL)){
 
