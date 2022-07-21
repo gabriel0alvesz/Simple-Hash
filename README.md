@@ -42,6 +42,7 @@ Vídeo 1 - Tratamento de colisões com listas encadeadas<br>
 
 <h2>Compilação e Execução</h2>
 
+
 ````
 gcc -g *.c -o main && ./main
 ````
