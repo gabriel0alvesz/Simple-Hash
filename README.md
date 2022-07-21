@@ -39,9 +39,9 @@ Vídeo 1 - Tratamento de colisões com listas encadeadas<br>
         <li><a = href = "https://blog.pantuza.com/artigos/tipos-abstratos-de-dados-tabela-hash">Tabela Hash</a> - Gustavo Pantuza</li>
         </ul>
         </p>
+        
 
 <h2>Compilação e Execução</h2>
-
 
 ````
 gcc -g *.c -o main && ./main
